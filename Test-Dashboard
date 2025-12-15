@@ -1,35 +1,37 @@
 {
-  "annotations": {
-    "list": [
-      {
-        "builtIn": 1,
-        "datasource": "-- Grafana --",
-        "enable": true,
-        "hide": true,
-        "iconColor": "rgba(0, 211, 255, 1)",
-        "name": "Annotations & Alerts",
-        "type": "dashboard"
-      }
-    ]
+  "apiVersion": "dashboard.grafana.app/v1alpha1",
+  "kind": "Dashboard",
+  "metadata": {
+    "name": "my-new-workflow-dashboard",
+    "namespace": "default"
   },
-  "editable": true,
-  "gnetId": null,
-  "graphTooltip": 0,
-  "id": null,
-  "links": [],
-  "panels": [], // This array would contain objects for each panel (graph, singlestat, etc.)
-  "schemaVersion": 16,
-  "style": "dark",
-  "tags": [],
-  "templating": {
-    "list": []
-  },
-  "time": {
-    "from": "now-6h",
-    "to": "now"
-  },
-  "timepicker": {},
-  "title": "My New Workflow Dashboard",
-  "uid": "new-dashboard-uid",
-  "version": 0
+  "spec": {
+    "author": "Amit",
+    "title": "My New Workflow Dashboard",
+    "uid": "new-dashboard-uid",
+    "schemaVersion": 16,
+    "editable": true,
+    "time": {
+      "from": "now-6h",
+      "to": "now"
+    },
+    "annotations": {
+      "list": [
+        {
+          "builtIn": 1,
+          "datasource": "-- Grafana --",
+          "enable": true,
+          "hide": true,
+          "iconColor": "rgba(0, 211, 255, 1)",
+          "name": "Annotations & Alerts",
+          "type": "dashboard"
+        }
+      ]
+    },
+    "panels": [],
+    "templating": {
+      "list": []
+    },
+    "tags": []
+  }
 }
